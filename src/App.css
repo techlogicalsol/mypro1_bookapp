@@ -1,38 +1,152 @@
-.App {
-  text-align: center;
+body{
+    background-color: #273c75;
+    
+    
+}
+html {
+    position: relative;
+    min-height: 100%;
+} 
+
+.myheader{
+    background-color: #0c2461;
+    padding-top: 14px;
+    padding-bottom: 14px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-link{
+    text-decoration: none;
+    color: white;
+   
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.nav-link:hover{
+    background-color: #1e3799;
+    border-radius: 6px;
+    color: white;
+    animation: myAnim 1s ease 0s 1 normal forwards;
+    
+}
+
+@keyframes myAnim {
+    0% {
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: 0.5;
+    }
+  
+    100% {
+      opacity: 1;
+    }
   }
+
+.btn{
+    height: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bookImg{
+    width: 100%;
+    height: 300px;
+    
 }
 
-.App-link {
-  color: #61dafb;
+.myCard-body{
+    background-color: #0c2461;
+}
+.myCard{
+    color: white;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.myCard img{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
+
+.mytext{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.mytitle{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    font-weight: 800;
+}
+
+
+.myform{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.myform input{
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    width: 650px;
+    background-color: #fff;
+   
+}
+
+.mybtnsearch{
+    width: 50px;
+    background-color: #0c2461;
+    color: white;
+}
+
+.mybtnsearch:hover{
+    border: 1px solid gold;
+    color: gold;
+}
+
+.bookInfo{
+    width: 100%;
+    height: 400px;
+}
+
+.desc{
+    height: 400px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    overflow-y: scroll;
+}
+
+.mylinks{
+    display: flex;
+    font-size: 18px;
+    justify-content: space-around;
+}
+
+.footer{
+    color: white;
+    text-align: center;
+    background-color: #0c2461;
+   
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    position:absolute;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    
+}
+
+.filter{
+    display: flex;
+    align-items: center;
+    
+}
+
